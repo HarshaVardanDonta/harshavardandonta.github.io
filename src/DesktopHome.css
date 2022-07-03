@@ -1,0 +1,258 @@
+.BodyOfPage{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-evenly;
+}
+.BodyOfMobile{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-evenly;
+}
+.Header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    width: 100%;
+    height: 6vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    align-items: center;
+    justify-content:space-around;
+    z-index: 100;
+    backdrop-filter: blur(50px);
+    background-color: rgba(190, 190, 190, 0.3);
+}
+.LogoContainer{
+    height: 40px;
+}
+.HeaderIconsContainer{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+.HeaderIcon{
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+}
+.DummySpace{
+    width: 1px;
+    height: 1px;
+}
+.SearchContainer{
+    display: flex;
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    background-color: rgb(204, 204, 204);
+    color: grey;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.TextField{
+    width: 85%;
+}
+
+.PostContainerForDesktopHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+}
+.PostContainerForDesktopFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+}
+.PostContainerForDesktopFooterIcon{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.PostContainerForDesktopHeaderImage{
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.ImageContainerForPost{
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.Container{
+    position: relative;
+    top: 8vh;
+    width: 100%;
+    height: fit-content;
+}
+.PostScrollDesktop{
+    position:  fixed;
+    top: 0vh;
+    left: 18vw;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+    align-content: center;
+}
+
+::-webkit-scrollbar {display:none;}
+
+.RightStaticDesktop{
+    position: fixed;
+    top: 10vh;
+    right: 18vw;
+    width: 25%;
+    height: fit-content;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    padding: 8px;
+    color: grey;
+    font-size: 10px;
+}
+
+.UserBanner{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.SuggestUserBanner{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.SuggestUserBanner img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+.SuggestUserBanner h4{
+    letter-spacing: 0.5px;
+    color: rgb(0, 170, 255);
+}
+.SuggestUserBanner p{
+    margin-left: 10px;
+    font-size: 11px;
+}
+.FlexRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.FlexColumn{
+    display: flex;
+    flex-direction: column;
+}
+.UserBanner h3{
+    letter-spacing: 1px;
+    color: rgb(0, 170, 255);
+}
+
+.UserBanner p{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.UserBanner img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+.PostScrollMobile{
+    position:  fixed;
+    top: 0;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+}
+.MobileFooter{
+    position:  fixed;
+    display: flex;
+    flex-direction: row;
+    bottom: 0vh;
+    width: 100vw;
+    height: 7vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.5);
+    backdrop-filter: blur(100px);
+}
+.PostContainerForDesktop{
+    position: relative;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    transition-duration: 1s;
+}
+.StoryIcon{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    font-size: 2vh;
+    align-items: center;
+    margin-left: 10px;
+    transition-duration: 0.2s;
+}
+.StoryIcon:hover{
+    transform: scale(1.1);
+}
+.StoryContainerForDesktop{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 2vh;
+    left: 0vw;
+    height: fit-content;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow-x: scroll;
+    background: rgb(241, 241, 241);
+}
+
+.StoryAvatar{
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+    margin-left: 5px;
+    overflow-x: scroll;
+}
